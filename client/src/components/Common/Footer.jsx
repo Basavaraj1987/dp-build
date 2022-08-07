@@ -16,7 +16,7 @@ class Footer extends React.Component {
                                 <div className="single-footer-widget">
                                     <div className="logo">
                                         <Link to="/">
-                                            <img src={logo} alt="logo" />
+                                            <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{ maxWidth: 200 }} />
                                         </Link>
                                     </div>
 

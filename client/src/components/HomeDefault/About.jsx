@@ -1,8 +1,8 @@
 import React from 'react';
 import lax from 'lax.js';
 import signature from '../../assets/images/signature.png';
-import about1 from '../../assets/images/about1.jpg';
-import about2 from '../../assets/images/about2.jpg';
+import about1 from '../../assets/images/about2.jpeg';
+import about2 from '../../assets/images/about1.jpeg';
 import one from '../../assets/images/1.png';
 import LaxButton from '../Common/LaxButton';
  
@@ -38,9 +38,9 @@ class About extends React.Component {
                                     {/* <h3>Best Digital Agency in the World</h3> */}
                                     <p>The digital world is expanding endlessly & every brand is trying to make its presence felt. Conversations are creating conversions & content is what is pushing the commerce. Come on board with us and lets set sail on a digital journey that pushes the limits of branding, marketing & advertising and carve ourselves a niche of mutual success. </p>
 
-                                    <div className="signature">
+                                    {/* <div className="signature">
                                         <img src={signature} alt="signature" />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

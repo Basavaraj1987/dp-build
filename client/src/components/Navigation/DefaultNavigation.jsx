@@ -41,17 +41,17 @@ class Navigation extends React.Component {
                                 <li>
                                     <AnchorLink 
                                         offset={() => 100} 
-                                        href="#project"
+                                        href="#clients"
                                     >
-                                        Project
+                                        Clients
                                     </AnchorLink>
                                 </li>
                                 <li>
                                     <AnchorLink 
                                         offset={() => 100} 
-                                        href="#clients"
+                                        href="#project"
                                     >
-                                        Clients
+                                        Testimonials
                                     </AnchorLink>
                                 </li>
                                 <li>
@@ -90,7 +90,7 @@ class Navigation extends React.Component {
                         <div className="uk-navbar">
                             <div className="logo uk-navbar-left">
                                 <a href="/">
-                                    <img src={logo} alt="logo" />
+                                    <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{ maxWidth: 200 }} />
                                 </a>
                             </div>
 
@@ -129,10 +129,10 @@ class Navigation extends React.Component {
                                         </li>
                                         <li>
                                             <AnchorLink 
-                                                href="#project"
+                                                href="#clients"
                                                 offset={() => 100}
                                             >
-                                                Project
+                                                Clients
                                             </AnchorLink>
                                         </li>
                                         <li>
@@ -140,7 +140,7 @@ class Navigation extends React.Component {
                                                 href="#clients"
                                                 offset={() => 100}
                                             >
-                                                Clients
+                                                Testimonial
                                             </AnchorLink>
                                         </li>
                                         <li>
@@ -161,7 +161,7 @@ class Navigation extends React.Component {
                                     </ul>
                                 </nav>
 
-                                <div className="lang">
+                                {/* <div className="lang">
                                     <form>
                                         <div>
                                             <select>
@@ -170,7 +170,7 @@ class Navigation extends React.Component {
                                             </select>
                                         </div>
                                     </form>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

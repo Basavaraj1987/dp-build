@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
- 
+import rocket from '../../assets/images/dp-rocket.jpeg';
+import rocketwhite from '../../assets/images/dp-rocket-white.jpeg';
+import social from '../../assets/images/dp-social.jpeg';
+import socialwhite from '../../assets/images/dp-social-white.jpeg';
+import target from '../../assets/images/dp-target.jpeg';
+import targetwhite from '../../assets/images/dp-target-white.jpeg';
+
 class ServiceTwoContent extends React.Component {
     render(){
         return (
@@ -10,7 +16,8 @@ class ServiceTwoContent extends React.Component {
                         <div className="item">
                             <div className="single-services-box">
                                 <div className="icon">
-                                    <i className="flaticon-plan"></i>
+                                    {/* <i className="flaticon-plan"></i> */}
+                                    <img src={rocket} alt="" />
                                 </div>
                                 <h3><Link to="/service-details">Brand & Creative</Link></h3>
                                 <div className="bar"></div>
@@ -34,7 +41,8 @@ class ServiceTwoContent extends React.Component {
                         <div className="item">
                             <div className="single-services-box">
                                 <div className="icon">
-                                    <i className="flaticon-think"></i>
+                                    <i className="rocketflaticon-think"></i>
+                                    <img src={target} alt="" />
                                 </div>
                                 <h3><Link to="/service-details">Digital Marketing</Link></h3>
                                 <div className="bar"></div>
@@ -58,7 +66,8 @@ class ServiceTwoContent extends React.Component {
                         <div className="item">
                             <div className="single-services-box">
                                 <div className="icon">
-                                    <i className="flaticon-shout"></i>
+                                    {/* <i className="flaticon-shout"></i> */}
+                                    <img src={social} alt="" />
                                 </div>
                                 <h3><Link to="/service-details">Video & Photography</Link></h3>
                                 <div className="bar"></div>

@@ -16,28 +16,14 @@ class NavigationFour extends React.Component {
                         <nav className="uk-navbar-container">
                             <ul className="uk-navbar-nav">
                                 <li>
-                                    <Link to="#">Home</Link>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li><Link to="/about">About</Link></li>
                                 <li><Link to="/services-two">Services</Link></li>
-                                {/* <li><Link to="#">Project</Link>
-                                    <div uk-dropdown="mode: click">
-                                        <ul className="uk-nav uk-dropdown-nav">
-                                            <li><Link to="/projects">Project</Link></li>
-                                            <li><Link to="/project-details">Single Project</Link></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li><Link to="#">Clients</Link></li>
                                 <li><Link to="/testimonials">Testimonials</Link></li>
-                                <li><Link to="/team">Team</Link></li> */}
-                                <li><Link to="/blog">Blog</Link>
-                                    {/* <div uk-dropdown="mode: click">
-                                        <ul className="uk-nav uk-dropdown-nav">
-                                            <li><Link to="/blog">Blog</Link></li>
-                                            <li><Link to="/blog-details">Single Blog</Link></li>
-                                        </ul>
-                                    </div> */}
-                                </li>
+                                <li><Link to="/team">Team</Link></li>
+                                <li><Link to="/blog">Blog</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </nav>
@@ -72,19 +58,15 @@ class NavigationFour extends React.Component {
                                         </li>
                                         <li className={pathName === '/services-two' ? 'uk-active' : ''}>
                                             <Link to="/services-two">Services</Link>
-                                            {/* <div uk-dropdown="true">
-                                                <ul className="uk-nav uk-dropdown-nav">
-                                                    <li className={pathName === '/services' ? 'uk-active' : ''}>
-                                                        <Link to="/services">Services One</Link>
-                                                    </li>
-                                                    <li >
-                                                        <Link to="/services-two">Services Two</Link>
-                                                    </li>
-                                                    <li className={pathName === '/service-details' ? 'uk-active' : ''}>
-                                                        <Link to="/service-details">Single Services</Link>
-                                                    </li>
-                                                </ul>
-                                            </div> */}
+                                        </li>
+                                        <li>
+                                            <Link to="#">Clients</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/testimonials">Testimonials</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/services-two">Team</Link>
                                         </li>
                                         <li className={pathName === '/blog' || pathName === '/blog-details' ? 'uk-active' : ''}>
                                             <Link to="/blog">Blog</Link>

@@ -43,7 +43,7 @@ class LatestNews extends React.Component {
     render(){
 
         this.state.blogs.map(blog =>
-            blog.links = blog.title.replace(/\s+/g, '-') // collapse whitespace and replace by -
+            blog.links = "/blog-details/" + blog.title.replace(/\s+/g, '-') // collapse whitespace and replace by -
         .replace(/-+/g, '-').toLowerCase() +'/'+ blog.id // collapse dashes
         )
 
@@ -68,15 +68,15 @@ class LatestNews extends React.Component {
                                 this.state.blogs.map(blog =>
                                     <div key={blog.id} className="single-blog-post">
                                         <div className="blog-post-image">
-                                            <Link to="{blog.links}">
+                                            <Link to={blog.links}>
                                                 <img src={blog.post_image} alt="news" />
                                             </Link>
                                         </div>
         
                                         <div className="blog-post-content">
                                             <span className="date">25 April</span>
-                                            <h3><Link to="{blog.links}">{blog.title}</Link></h3>
-                                            <Link to="{blog.links}" className="read-more">Read More</Link>
+                                            <h3><Link to={blog.links}>{blog.title}</Link></h3>
+                                            <Link to={blog.links} className="read-more">Read More</Link>
                                         </div>
                                     </div>
     
