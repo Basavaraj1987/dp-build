@@ -6,6 +6,18 @@ import footerShapeTwo from '../../assets/images/footer-shape2.png';
 import GoTop from './GoTop';
  
 class Footer extends React.Component {
+
+    componentDidMount () {
+        (function(w, d) { 
+            w.CollectId = "62fb980af27acc1b8412a00f"; 
+            var h = d.head || d.getElementsByTagName("head")[0]; 
+            var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); 
+            s.async=true; 
+            s.setAttribute("src", "https://collectcdn.com/launcher.js"); 
+            h.appendChild(s); 
+        })(window, document);
+    }
+
     render(){
         return (
             <>
@@ -20,17 +32,25 @@ class Footer extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <p>Lorem ipsum dolor consectetur adipiscing elit, eiusmod tempor ut labore et dolore magna aliqua.</p>
+                                    <p>We are a Digital Marketing Company with a Creative Bend. We believe in partnering with Brands as an extended arm of the marketing team by delivering creative solutions with measurable outcomes.</p>
                                 </div>
                             </div>
 
                             <div className="item">
                                 <div className="single-footer-widget">
-                                    <h3>New York</h3>
+                                    <h3>Services</h3>
                                     <div className="bar"></div>
 
                                     <div className="location">
-                                        <p>198 Collective Street <br /> Manhattan <br /> Kingston <br /> United State</p>
+                                        <a className='color-white-padding' href="">Branding</a>
+                                        <a className='color-white-padding' href="">Creative</a> 
+                                        <a className='color-white-padding' href="">Social Media Marketing</a>
+                                        <a className='color-white-padding' href="">Website</a>
+                                        <a className='color-white-padding' href="">SEO</a>
+                                        <a className='color-white-padding' href="">Influencer Marketing</a>
+                                        <a className='color-white-padding' href="">Content Marketing</a>
+                                        <a className='color-white-padding' href="">Performance Marketing</a>
+                                        <a className='color-white-padding' href="">Video & Animation</a>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +61,7 @@ class Footer extends React.Component {
                                     <div className="bar"></div>
 
                                     <div className="location">
-                                        <p>352/71 Second Street <br /> King Street <br /> Kingston <br /> United Kingdom</p>
+                                        <p>No 21, 2nd floor, Opp. to 7th Cross<br /> Junction, Dollars Colony, Nagashetty<br />Halli, Bengaluru, Karnataka 560094</p>
                                     </div>
                                 </div>
                             </div>
@@ -52,9 +72,9 @@ class Footer extends React.Component {
                                     <div className="bar"></div>
 
                                     <ul className="contact-info">
-                                        <li><a href="mailto:info@gunter.com">info@gunter.com</a></li>
-                                        <li><a href="mailto:fax@gunter.com">fax@gunter.com</a></li>
-                                        <li><a href="tel:+444785417452">+44 478 541 7452</a></li>
+                                        <li><a href="mailto:info@digipuush.com">info@digipuush.com</a></li>
+                                        <li><a href="mailto:chethan@digipuush.com">chethan@digipuush.com</a></li>
+                                        <li><a href="tel:+917259435190">+91 72594 35190</a></li>
                                     </ul>
                                     <ul className="social">
                                         <li>
@@ -85,7 +105,7 @@ class Footer extends React.Component {
                         <div className="copyright-area">
                             <div className="uk-grid uk-grid-match uk-grid-medium uk-child-width-1-2@m uk-child-width-1-2@s">
                                 <div className="item">
-                                    <p>© Gunter. All Rights Reserved EnvyTheme</p>
+                                    <p>© Digipuush. All Rights Reserved EnvyTheme</p>
                                 </div>
 
                                 <div className="item">

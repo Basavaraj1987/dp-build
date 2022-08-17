@@ -92,42 +92,35 @@ class ServiceDetails extends React.Component {
                                             </div>
                                         </OwlCarousel>
 
-                                        <h3>Why Choose This Service</h3>
-                                        <p>Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium dolore Totam rem aperiam with Link long list of products and never ending customer support.</p>
-
-                                        <ul className="services-features-list">
-                                            <li><i className="flaticon-tick"></i> Great Technology</li>
-                                            <li><i className="flaticon-tick"></i> Delivery On Time</li>
-                                            <li><i className="flaticon-tick"></i> Expert Engineers</li>
-                                            <li><i className="flaticon-tick"></i> Creative Architecture</li>
-                                            <li><i className="flaticon-tick"></i> Industrial Construction</li>
-                                            <li><i className="flaticon-tick"></i> 24/7 Support</li>
-                                        </ul>
-
-                                        <blockquote className="blockquote">
-                                            <p>Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium dolore Totam rem aperiam with Link long list of products and never ending customer support.</p>
-                                        </blockquote>
-
-                                        <h3>Our Work Benefits</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                                        <div className="our-work-benefits">
-                                            <Collapsible trigger="Which material types can you work with">
-                                                <p>This is the collapsible content. It can be any element or React component you like. It can even be another Collapsible component. Check out the next section!</p>
-                                            </Collapsible>
-
-                                            <Collapsible trigger="Is Smart Lock required for instant apps?">
-                                                <p>This is the collapsible content. It can be any element or React component you like. It can even be another Collapsible component. Check out the next section!</p>
-                                            </Collapsible>
-                                        </div>
                                     </div>
                                 </div>
 
                                 <div className="uk-sidebar uk-width-1-5 uk-flex-first@l uk-first-column">
                                     <div className="widget widget_search">
                                         <form>
-                                            <input type="text" className="uk-input" placeholder="Search here..." />
-                                            <button type="submit"><i className="flaticon-search"></i></button>
+                                            <div className='item uk-margin'>
+                                                <input type="text" className="uk-input" placeholder="your name" />
+                                                <br />
+                                            </div>
+                                            <div className='item uk-margin'>
+                                                <input type="text" className="uk-input" placeholder="your email" />
+                                                <br />
+                                            </div>
+                                            <div className='item uk-margin'>
+                                                <input type="text" className="uk-input" placeholder="your phone" />
+                                                <br />
+                                            </div>
+                                            <div className='item uk-margin'>
+                                                <select className="uk-input">
+                                                {
+                                                this.state.services.map(service =>
+                                                        <option value={service.name}>{service.name} </option>
+                                                    )
+                                                }
+                                                </select>
+                                            </div>
+                                            <br />
+                                            <input type="submit" value="Submit" className='uk-button uk-button-default' />
                                         </form>
                                     </div>
 

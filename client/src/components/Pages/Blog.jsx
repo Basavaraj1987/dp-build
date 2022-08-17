@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import NavigationFour from '../Navigation/NavigationFour';
 import Footer from '../Common/Footer';
-import blogImgOne from '../../assets/images/blog1.jpg';
-import blogImgTwo from '../../assets/images/blog2.jpg';
-import blogImgThree from '../../assets/images/blog3.jpg';
 import AllBlog from './AllBlog';
 
 class Blog extends React.Component {
