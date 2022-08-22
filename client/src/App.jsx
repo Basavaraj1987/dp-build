@@ -6,18 +6,9 @@ import '../src/assets/css/style.css';
 import '../src/assets/css/responsive.css';
 
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Preloader from './components/Common/Preloader';
 import Home from './components/Pages/Home';
-import HomeTwo from './components/Pages/HomeTwo';
-import HomeThree from './components/Pages/HomeThree';
-import HomeFour from './components/Pages/HomeFour';
-import HomeFive from './components/Pages/HomeFive';
-import HomeSix from './components/Pages/HomeSix';
-import HomeSeven from './components/Pages/HomeSeven';
-import HomeEight from './components/Pages/HomeEight';
-import HomeNine from './components/Pages/HomeNine';
-import HomeTen from './components/Pages/HomeTen';
 import About from './components/Pages/About';
 import Services from './components/Pages/Services';
 import ServicesTwo from './components/Pages/ServicesTwo';
@@ -48,22 +39,13 @@ class App extends React.Component {
                 <>
                     {this.state.loading ? <Preloader /> : ''}
                     <Route path="/" exact component={Home} />
-                    <Route path="/home-two" exact component={HomeTwo} />
-                    <Route path="/home-three" exact component={HomeThree} />
-                    <Route path="/home-four" exact component={HomeFour} />
-                    <Route path="/home-five" exact component={HomeFive} />
-                    <Route path="/home-six" exact component={HomeSix} />
-                    <Route path="/home-seven" exact component={HomeSeven} />
-                    <Route path="/home-eight" exact component={HomeEight} />
-                    <Route path="/home-nine" exact component={HomeNine} />
-                    <Route path="/home-ten" exact component={HomeTen} />
-                    <Route path="/about" exact component={About} />
-                    <Route path="/services" exact component={Services} />
-                    <Route path="/services-two" exact component={ServicesTwo} />
-                    <Route path="/service-details/:title/:id" exact component={ServiceDetails} />
+                    <Route path="/about" exact component={About} /> 
+                    <Switch>
+                        <Route path="/service-details/:title/:id" exact component={ServiceDetails} />
+                    </Switch>
                     <Route path="/projects" exact component={Project} />
                     <Route path="/project-details" exact component={ProjectDetails} />
-                    <Route path="/blog-details/:title/:id" exact component={BlogDetails} />
+                    <Route path="/:title/:id" exact component={BlogDetails} />
                     <Route path="/testimonials" exact component={Testimonials} />
                     <Route path="/team" exact component={Team} />
                     <Route path="/blog" exact component={Blog} />

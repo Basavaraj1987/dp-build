@@ -785,7 +785,7 @@ Features CSS
   position: relative;
   margin-top: -50px;
   z-index: 1;
-  background: #ffffff;
+  background: #000000;
 }
 
 .features-area.uk-dark {

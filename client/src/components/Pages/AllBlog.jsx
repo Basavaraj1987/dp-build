@@ -10,6 +10,11 @@ class AllBlog extends React.Component {
     };
 
     componentDidMount(){
+
+        const $style = document.createElement("style");
+        document.head.appendChild($style);
+        $style.innerHTML = `.blogImg { width: 380px; height: 214px; object-fit: cover; object-position: 100% 0%; }`;
+
         // var config = {
         //     headers: {'Access-Control-Allow-Origin': '*'}
         // };
@@ -41,17 +46,17 @@ class AllBlog extends React.Component {
                 {
                 this.state.blogs.map(blog =>
 
-                        <div className="single-blog-post">
+                        <div key={blog.id} className="single-blog-post">
                             <div className="blog-post-image">
-                                <Link to={'/blog-details/' + blog.links}>
-                                    <img src={blog.post_image} alt="blog" />
+                                <Link to={'/' + blog.links}>
+                                    <img src={blog.post_image} className="blogImg" alt="blog" />
                                 </Link>
                             </div>
 
                             <div className="blog-post-content">
                                 <span className="date"></span>
-                                <h3><Link to={'/blog-details/' + blog.links}>{blog.title}</Link></h3>
-                                <Link to={'/blog-details/' + blog.links} className="read-more">Read More</Link>
+                                <h3><Link to={'/' + blog.links}>{blog.title}</Link></h3>
+                                <Link to={'/' + blog.links} className="read-more">Read More</Link>
                             </div>
                         </div>
                     )

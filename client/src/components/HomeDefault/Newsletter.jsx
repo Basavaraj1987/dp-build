@@ -1,6 +1,6 @@
 import React from 'react';
 import footerShape from '../../assets/images/footer-shape1.png';
- 
+
 class Newsletter extends React.Component {
 
     state = {
@@ -11,16 +11,49 @@ class Newsletter extends React.Component {
         e.preventDefault();
     }
 
-    render(){
+    render() {
         return (
             <section className="subscribe-area uk-section uk-dark uk-subscribe bg-gray">
                 <div className="uk-container">
-                    <div className="uk-grid uk-grid-match uk-grid-medium uk-child-width-1-2@m uk-child-width-1-1@s">
+                    <div className="uk-grid1 uk-grid-match uk-grid-medium uk-child-width-1-2@m uk-child-width-1-1@s">
                         <div className="item">
-                            <h3>Subscribe to our newsletter</h3>
+                            <h3>Give your Brand that Push</h3>
                         </div>
+                        <br />
+                        <form style={{ width: '100%' }}>
+                            <div style={{ width: '100%' }}>
+                                <div className='item uk-margin' style={{ width: '23%', float: 'left', marginTop: '20px', paddingLeft: '10px', paddingRight: '10px' }}>
+                                    <input type="text" className="uk-input" placeholder="your name" />
+                                </div>
+                                <div className='item uk-margin' style={{ width: '23%', float: 'left', paddingLeft: '10px', paddingRight: '10px' }}>
+                                    <input type="text" className="uk-input" placeholder="your email" />
+                                </div>
+                                <div className='item uk-margin' style={{ width: '23%', float: 'left', paddingLeft: '10px', paddingRight: '10px' }}>
+                                    <input type="text" className="uk-input" placeholder="your phone" />
+                                </div>
+                                <div className='item uk-margin' style={{ width: '23%', float: 'left' , paddingLeft: '10px', paddingRight: '10px' }}>
+                                    <select className="uk-input">
+                                        <option value="Branding">Branding</option>
+                                        <option value="Creative">Creative</option>
+                                        <option value="Social Media Marketing">Social Media Marketing</option>
+                                        <option value="Website">Website</option>
+                                        <option value="SEO">SEO</option>
+                                        <option value="Influencer Marketing">Influencer Marketing</option>
+                                        <option value="Content Marketing">Content Marketing</option>
+                                        <option value="Performance Marketing">Performance Marketing</option>
+                                        <option value="Video & Animation">Video & Animation</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div style={{ width: '100%' }}>
+                                <br />
+                                <div className='item' style={{ width: '25%' }}>
+                                    <input type="submit" value="Submit" className='uk-button uk-button-default' style={{ top: 'auto' }} />
+                                </div>
+                            </div>
+                        </form>
 
-                        <div className="item">
+                        {/* <div className="item">
                             <form 
                                 className="newsletter-form"
                                 onSubmit={this.onFormSubmit}
@@ -40,7 +73,7 @@ class Newsletter extends React.Component {
                                     Subscribe Now
                                 </button>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -51,5 +84,5 @@ class Newsletter extends React.Component {
         );
     }
 }
- 
+
 export default Newsletter;

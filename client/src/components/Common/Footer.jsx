@@ -8,14 +8,7 @@ import GoTop from './GoTop';
 class Footer extends React.Component {
 
     componentDidMount () {
-        (function(w, d) { 
-            w.CollectId = "62fb980af27acc1b8412a00f"; 
-            var h = d.head || d.getElementsByTagName("head")[0]; 
-            var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); 
-            s.async=true; 
-            s.setAttribute("src", "https://collectcdn.com/launcher.js"); 
-            h.appendChild(s); 
-        })(window, document);
+        (function(w, d) { w.CollectId = "62fb980af27acc1b8412a00f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
     }
 
     render(){
@@ -28,7 +21,7 @@ class Footer extends React.Component {
                                 <div className="single-footer-widget">
                                     <div className="logo">
                                         <Link to="/">
-                                            <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{ maxWidth: 200 }} />
+                                            <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{ maxWidth: '150px' }} />
                                         </Link>
                                     </div>
 
@@ -57,11 +50,11 @@ class Footer extends React.Component {
 
                             <div className="item">
                                 <div className="single-footer-widget">
-                                    <h3>London</h3>
+                                    <h3>Bangalore</h3>
                                     <div className="bar"></div>
 
                                     <div className="location">
-                                        <p>No 21, 2nd floor, Opp. to 7th Cross<br /> Junction, Dollars Colony, Nagashetty<br />Halli, Bengaluru, Karnataka 560094</p>
+                                        <p>No 21, 2nd floor, <br />Opp. to 7th Cross Junction,<br />Dollars Colony, NagashettyHalli,<br /> Bengaluru, Karnataka 560094</p>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +65,6 @@ class Footer extends React.Component {
                                     <div className="bar"></div>
 
                                     <ul className="contact-info">
-                                        <li><a href="mailto:info@digipuush.com">info@digipuush.com</a></li>
                                         <li><a href="mailto:chethan@digipuush.com">chethan@digipuush.com</a></li>
                                         <li><a href="tel:+917259435190">+91 72594 35190</a></li>
                                     </ul>
@@ -105,7 +97,7 @@ class Footer extends React.Component {
                         <div className="copyright-area">
                             <div className="uk-grid uk-grid-match uk-grid-medium uk-child-width-1-2@m uk-child-width-1-2@s">
                                 <div className="item">
-                                    <p>© Digipuush. All Rights Reserved EnvyTheme</p>
+                                    <p>© Digipuush. All Rights Reserved</p>
                                 </div>
 
                                 <div className="item">

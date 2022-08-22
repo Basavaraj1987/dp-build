@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel3';
-import project1 from '../../assets/images/project1.jpg';
-import project2 from '../../assets/images/project2.jpg';
-import project3 from '../../assets/images/project3.jpg';
+import project1 from '../../assets/images/work/trojanMascot.png';
+import project2 from '../../assets/images/work/CoscoFilter.png';
+import project3 from '../../assets/images/work/Blackfigtech.png';
+import project4 from '../../assets/images/work/KisanKraft.png';
 
 const options = {
     loop: true,
@@ -40,7 +41,7 @@ class Project extends React.Component {
                             <h2>Our Work</h2>
                             <div className="bar"></div>
 
-                            <Link to="/projects" className="uk-button uk-button-default">All Projects</Link>
+                            {/* <Link to="/projects" className="uk-button uk-button-default">All Projects</Link> */}
                         </div>
                     </div>
 
@@ -49,74 +50,57 @@ class Project extends React.Component {
                         {...options}
                     >
                         <div className="single-project">
-                            <Link to="/project-details" className="project-img">
-                                <img src={project1} alt="Project" />
-                            </Link>
-
-                            <div className="project-content">
-                                <h3><Link to="/project-details">Social Media for Hydenmet</Link></h3>
-                                <ul>
-                                    <li><Link to="#">Web</Link></li>
-                                    <li><Link to="#">Mobile</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="single-project">
-                            <Link to="/project-details" className="project-img">
+                            <Link to="#" className="project-img">
                                 <img src={project2} alt="Project" />
                             </Link>
 
                             <div className="project-content">
-                                <h3><Link to="/project-details">Social Media for Cosco</Link></h3>
+                                <h3><Link to="#">Instagram Filter for Cosco</Link></h3>
                                 <ul>
-                                    <li><Link to="#">Home</Link></li>
-                                    <li><Link to="#">Bridge</Link></li>
+                                    <li><Link to="#">Creative & Social Media</Link></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className="single-project">
-                            <Link to="/project-details" className="project-img">
-                                <img src={project3} alt="Project" />
+                            <Link to="#" className="project-img">
+                                <img src={project1} alt="Project" />
                             </Link>
 
                             <div className="project-content">
-                                <h3><Link to="/project-details">Website for Blackfigtech</Link></h3>
+                                <h3><Link to="#">Trojan Plywood Brand Mascot</Link></h3>
                                 <ul>
-                                    <li><Link to="#">Web</Link></li>
-                                    <li><Link to="#">Mobile</Link></li>
+                                    <li><Link to="#">All Media</Link></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className="single-project">
-                            <Link to="/project-details" className="project-img">
-                                <img src={project1} alt="project" />
+                            <Link to="#" className="project-img">
+                                <img src={project4} alt="Project" />
                             </Link>
 
                             <div className="project-content">
-                                <h3><Link to="/project-details">SEO for Prime Inc</Link></h3>
+                                <h3><Link to="#">KisanKraft SEO</Link></h3>
                                 <ul>
-                                    <li><Link to="#">Web</Link></li>
-                                    <li><Link to="#">Mobile</Link></li>
+                                    <li><Link to="#">Search Engine Optimization</Link></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className="single-project">
-                            <Link to="/project-details" className="project-img">
+                            <Link to="#" className="project-img">
                                 <img src={project3} alt="project" />
                             </Link>
 
                             <div className="project-content">
-                                <h3><Link to="/project-details">UX/UI Design</Link></h3>
+                                <h3><Link to="#">Blackfigtech.com</Link></h3>
                                 <ul>
-                                    <li><Link to="#">Web</Link></li>
-                                    <li><Link to="#">Mobile</Link></li>
+                                    <li><Link to="#">Website Development</Link></li>
                                 </ul>
                             </div>
                         </div>
+
                     </OwlCarousel>
                 </section>
             </>

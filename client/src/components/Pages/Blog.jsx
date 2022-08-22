@@ -12,8 +12,8 @@ class Blog extends React.Component {
             <>
                 <NavigationFour />
 
-                <section class="page-title-area uk-page-title">
-                    <div class="uk-container">
+                <section className="page-title-area uk-page-title">
+                    <div className="uk-container">
                         <h1>Blog</h1>
                         <ul>
                             <li><a href="/">Home</a></li>

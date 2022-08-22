@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class NavigationFour extends React.Component {
     render(){
         let pathName = window.location.pathname;
-        const maxWidth = 200;
+        const maxWidth = 150;
         return (
             <>
                 {/* Mobile Navbar */}
@@ -15,14 +15,12 @@ class NavigationFour extends React.Component {
 
                         <nav className="uk-navbar-container">
                             <ul className="uk-navbar-nav">
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/services-two">Services</Link></li>
-                                <li><Link to="#">Clients</Link></li>
-                                <li><Link to="/testimonials">Testimonials</Link></li>
-                                <li><Link to="/team">Team</Link></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/">About</Link></li>
+                                <li><Link to="/">Services</Link></li>
+                                <li><Link to="/">Clients</Link></li>
+                                <li><Link to="/">Testimonials</Link></li>
+                                <li><Link to="/">Team</Link></li>
                                 <li><Link to="/blog">Blog</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>
@@ -36,8 +34,8 @@ class NavigationFour extends React.Component {
                     <div className="uk-container">
                         <div className="uk-navbar">
                             <div className="logo uk-navbar-left">
-                                <a href="/home-four">
-                                    <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{maxWidth: maxWidth + 'px'}} />
+                                <a href="/">
+                                    {/* <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{maxWidth: maxWidth + 'px'}} /> */}
                                 </a>
                             </div>
 
@@ -50,8 +48,8 @@ class NavigationFour extends React.Component {
                             <div className="navbar uk-navbar-right">
                                 <nav className="uk-navbar-container">
                                     <ul className="uk-navbar-nav">
-                                        <li>
-                                            <Link to="#">Home</Link>
+                                        <li className={pathName === '/' ? 'uk-active' : ''}>
+                                            <Link to="/">Home</Link>
                                         </li>
                                         <li className={pathName === '/about' ? 'uk-active' : ''}>
                                             <Link to="/about">About</Link>

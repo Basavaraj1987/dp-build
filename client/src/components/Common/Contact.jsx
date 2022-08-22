@@ -108,25 +108,14 @@ class Contact extends React.Component {
             <div className="uk-grid uk-grid-match uk-grid-medium uk-child-width-1-2@m uk-child-width-1-1@s">
               <div className="item">
                 <div className="map-img">
-                  <img src={mapImg} alt="map" />
-
-                  <div className="location uk-location1">
-                    <Link to="#" className="active">
-                      <div className="location-info">
-                        <h5>New York</h5>
-                        <span>198 Collective Street</span>
-                      </div>
-                    </Link>
-                  </div>
-
-                  <div className="location uk-location2">
-                    <Link to="#">
-                      <div className="location-info">
-                        <h5>London</h5>
-                        <span>357/71 Collective Street</span>
-                      </div>
-                    </Link>
-                  </div>
+                  <h3>Bengaluru</h3>
+                  <h4>No 21, 2nd floor,</h4>
+                  <h4>Opp. to 7th Cross Junction,</h4>
+                  <h4>Dollars Colony, NagashettyHalli,</h4>
+                  <h4>Bengaluru, Karnataka 560094</h4>
+                  <br />
+                  <h4><a uk-icon="icon: mail" href="mailto:chethan@digipuush.com">chethan@digipuush.com</a></h4>
+                  <h4><a uk-icon="icon: phone" href="tel:+91 72594 35190">+91 72594 35190</a></h4>
                 </div>
               </div>
 

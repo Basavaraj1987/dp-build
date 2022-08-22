@@ -42,21 +42,21 @@ class Testimonials extends React.Component {
 
                                 <img src={shapeImg} className="shape-img" alt="Testimonials" />
 
-                                <Link 
+                                {/* <Link 
                                     onClick={e => {e.preventDefault(); this.openModal()}}
                                     to="#" 
                                     className="video-btn popup-youtube">
                                         <i className="flaticon-multimedia"></i> Watch Video
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
 
-                        <ModalVideo 
+                        {/* <ModalVideo 
                             channel='youtube' 
                             isOpen={this.state.isOpen} 
                             videoId='bk7McNUjWgw' 
                             onClose={() => this.setState({isOpen: false})} 
-                        />
+                        /> */}
 
                         <div className="item">
                             <div className="feedback-inner">
@@ -72,31 +72,31 @@ class Testimonials extends React.Component {
                                 >
                                     <div className="single-feedback">
                                         <i className="flaticon-quote"></i>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                        <p>Chethan and the team at Digipuush get into the client’s shoes with pragmatism to deliver beyond what’s just asked. They are thorough hard-working professionals, to whom we wish the best!! </p>
 
                                         <div className="client">
-                                            <h3>Jason Statham</h3>
-                                            <span>Founder at Envato</span>
+                                            <h3>Aakash Jain</h3>
+                                            <span>Business Executive, Cosco India</span>
                                         </div>
                                     </div>
 
                                     <div className="single-feedback">
                                         <i className="flaticon-quote"></i>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                        <p>The energy & passion clearly is seen in Digipuush's work & delivery. The level of understanding of communication is pretty deep. All the best guys.</p>
 
                                         <div className="client">
-                                            <h3>Jason Statham</h3>
-                                            <span>Founder at Envato</span>
+                                            <h3>Manoj Pandey</h3>
+                                            <span>Head of Marketing - Fila, Proline & Vans</span>
                                         </div>
                                     </div>
 
                                     <div className="single-feedback">
                                         <i className="flaticon-quote"></i>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                        <p>We worked with Digipuush for almost a year and had quite a nice journey with them. They have given our agriculture division the digital push it required to the max. Their designs were to the mark & delivered on time.</p>
 
                                         <div className="client">
-                                            <h3>Jason Statham</h3>
-                                            <span>Founder at Envato</span>
+                                            <h3>Dishita Ghelani</h3>
+                                            <span>Manager - Marketing & HR</span>
                                         </div>
                                     </div>
                                 </OwlCarousel>
