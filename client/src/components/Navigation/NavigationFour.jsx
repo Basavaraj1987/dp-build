@@ -35,7 +35,7 @@ class NavigationFour extends React.Component {
                         <div className="uk-navbar">
                             <div className="logo uk-navbar-left">
                                 <a href="/">
-                                    {/* <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{maxWidth: maxWidth + 'px'}} /> */}
+                                    <img src="https://digipuush.com/wp-content/uploads/2022/03/Logo-Orange-2048x747.png.webp" alt="logo" style={{maxWidth: maxWidth + 'px'}} />
                                 </a>
                             </div>
 
