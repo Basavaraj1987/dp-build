@@ -35,15 +35,15 @@ class Footer extends React.Component {
                                     <div className="bar"></div>
 
                                     <div className="location">
-                                        <a className='color-white-padding' href="">Branding</a>
-                                        <a className='color-white-padding' href="">Creative</a> 
-                                        <a className='color-white-padding' href="">Social Media Marketing</a>
-                                        <a className='color-white-padding' href="">Website</a>
-                                        <a className='color-white-padding' href="">SEO</a>
-                                        <a className='color-white-padding' href="">Influencer Marketing</a>
-                                        <a className='color-white-padding' href="">Content Marketing</a>
-                                        <a className='color-white-padding' href="">Performance Marketing</a>
-                                        <a className='color-white-padding' href="">Video & Animation</a>
+                                        <a className='color-white-padding' href="/service-details/branding">Branding</a>
+                                        <a className='color-white-padding' href="/service-details/creative">Creative</a> 
+                                        <a className='color-white-padding' href="/service-details/social-media-marketing">Social Media Marketing</a>
+                                        <a className='color-white-padding' href="/service-details/website">Website</a>
+                                        <a className='color-white-padding' href="/service-details/seo">SEO</a>
+                                        <a className='color-white-padding' href="/service-details/influencer-marketing">Influencer Marketing</a>
+                                        <a className='color-white-padding' href="/service-details/content-marketing">Content Marketing</a>
+                                        <a className='color-white-padding' href="/service-details/performance-marketing">Performance Marketing</a>
+                                        <a className='color-white-padding' href="/service-details/video-&-animation">Video & Animation</a>
                                     </div>
                                 </div>
                             </div>

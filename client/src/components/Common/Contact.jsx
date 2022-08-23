@@ -114,8 +114,8 @@ class Contact extends React.Component {
                   <h4>Dollars Colony, NagashettyHalli,</h4>
                   <h4>Bengaluru, Karnataka 560094</h4>
                   <br />
-                  <h4><a uk-icon="icon: mail" href="mailto:chethan@digipuush.com">chethan@digipuush.com</a></h4>
-                  <h4><a uk-icon="icon: phone" href="tel:+91 72594 35190">+91 72594 35190</a></h4>
+                  <h4><a href="mailto:chethan@digipuush.com">chethan@digipuush.com</a></h4>
+                  <h4><a href="tel:+91 72594 35190">+91 72594 35190</a></h4>
                 </div>
               </div>
 
@@ -160,16 +160,24 @@ class Contact extends React.Component {
                     </div>
 
                     <div className="item uk-margin">
-                      <input
+                      <select
                         type="text"
                         className="uk-input"
                         name="subject"
-                        id="subject"
-                        placeholder="Subject"
                         value={this.state.formFields.subject}
                         onChange={this.subjectChangeHandler}
                         required={true}
-                      />
+                      >
+                      <option value="Branding">Branding</option>
+                      <option value="Creative">Creative</option>
+                      <option value="Social Media Marketing">Social Media Marketing</option>
+                      <option value="Website">Website</option>
+                      <option value="SEO">SEO</option>
+                      <option value="Influencer Marketing">Influencer Marketing</option>
+                      <option value="Content Marketing">Content Marketing</option>
+                      <option value="Performance Marketing">Performance Marketing</option>
+                      <option value="Video & Animation">Video & Animation</option>
+                      </select>
                     </div>
                   </div>
 
@@ -180,7 +188,7 @@ class Contact extends React.Component {
                       id="message"
                       cols="30"
                       rows="4"
-                      placeholder="Your Message"
+                      placeholder="Your Message (optional)"
                       value={this.state.formFields.text}
                       onChange={this.textChangeHandler}
                       required={true}

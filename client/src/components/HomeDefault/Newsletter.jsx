@@ -21,17 +21,17 @@ class Newsletter extends React.Component {
                         </div>
                         <br />
                         <form style={{ width: '100%' }}>
-                            <div style={{ width: '100%' }}>
-                                <div className='item uk-margin' style={{ width: '23%', float: 'left', marginTop: '20px', paddingLeft: '10px', paddingRight: '10px' }}>
-                                    <input type="text" className="uk-input" placeholder="your name" />
+                            <div className='uk-grid uk-grid-match uk-grid-medium uk-child-width-1-4@m uk-child-width-1-1@s'>
+                                <div className='item uk-margin'>
+                                    <input type="text" className="uk-input" placeholder="your name" style={{ marginTop: '20px' }} />
                                 </div>
-                                <div className='item uk-margin' style={{ width: '23%', float: 'left', paddingLeft: '10px', paddingRight: '10px' }}>
+                                <div className='item uk-margin'>
                                     <input type="text" className="uk-input" placeholder="your email" />
                                 </div>
-                                <div className='item uk-margin' style={{ width: '23%', float: 'left', paddingLeft: '10px', paddingRight: '10px' }}>
+                                <div className='item uk-margin'>
                                     <input type="text" className="uk-input" placeholder="your phone" />
                                 </div>
-                                <div className='item uk-margin' style={{ width: '23%', float: 'left' , paddingLeft: '10px', paddingRight: '10px' }}>
+                                <div className='item uk-margin'>
                                     <select className="uk-input">
                                         <option value="Branding">Branding</option>
                                         <option value="Creative">Creative</option>
