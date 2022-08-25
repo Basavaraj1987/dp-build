@@ -46,12 +46,12 @@ const options = {
             items: 4
         },
         1200: {
-            items: 6
+            items: 4
         }
     }
 }
  
-class PartnerLogo extends React.Component {
+class StatsSlider extends React.Component {
 
     render(){
 
@@ -66,127 +66,64 @@ class PartnerLogo extends React.Component {
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite1} alt="" />
+                            {/* <img src={partnerWhite1} alt="" /> */}
+                            <span uk-icon="icon: users; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>50+</h3>
+                            <h4 style={{ margin: 0 }}>Happy Clients</h4>
                         </Link>
                     </div>
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite2} alt="" />
+                            {/* <img src={partnerWhite2} alt="" /> */}
+                            <span uk-icon="icon:  tag; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>Rs.25L+</h3>
+                            <h4 style={{ margin: 0 }}>Monthly Budget Management</h4>
                         </Link>
                     </div>
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite3} alt="" />
+                            {/* <img src={partnerWhite3} alt="" /> */}
+                            <span uk-icon="icon:  commenting; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>2,000+</h3>
+                            <h4 style={{ margin: 0 }}>Content Pieces developed</h4>
                         </Link>
                     </div>
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite4} alt="" />
+                            {/* <img src={partnerWhite4} alt="" /> */}
+                            <span uk-icon="icon: social; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>2L+</h3>
+                            <h4 style={{ margin: 0 }}>Backlinks Built manually</h4>
                         </Link>
                     </div>
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite5} alt="" />
+                            {/* <img src={partnerWhite5} alt="" /> */}
+                            <span uk-icon="icon:  video-camera; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>10+</h3>
+                            <h4 style={{ margin: 0 }}>Corporate Videos developed</h4>
                         </Link>
                     </div>
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite6} alt="" />
+                            {/* <img src={partnerWhite6} alt="" /> */}
+                            <span uk-icon="icon: world; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>15+</h3>
+                            <h4 style={{ margin: 0 }}>Websites developed</h4>
                         </Link>
                     </div>
 
                     <div className="item">
                         <Link to="#">
-                            <img src={partnerWhite7} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite8} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite9} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite10} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite11} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite12} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite13} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite14} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite15} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite16} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite17} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite18} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite19} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite20} alt="" />
-                        </Link>
-                    </div>
-
-                    <div className="item">
-                        <Link to="#">
-                            <img src={partnerWhite21} alt="" />
+                            {/* <img src={partnerWhite7} alt="" /> */}
+                            <span uk-icon="icon: hashtag; ratio: 2"></span>
+                            <h3 style={{ marginBottom: 0 }}>1</h3>
+                            <h4 style={{ margin: 0 }}>India's only Video-Only Ad Agency</h4>
                         </Link>
                     </div>
 
@@ -198,4 +135,4 @@ class PartnerLogo extends React.Component {
     }
 }
  
-export default PartnerLogo;
+export default StatsSlider;

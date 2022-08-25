@@ -17,10 +17,6 @@ class BlogDetails extends React.Component {
     };
 
     componentDidMount(){
-
-        const $style = document.createElement("style");
-        document.head.appendChild($style);
-        $style.innerHTML = `a { display:inline; }`;
       
         var config = {
             headers: {'Access-Control-Allow-Origin': '*'}
@@ -49,9 +45,6 @@ class BlogDetails extends React.Component {
                     currentblog.title = blog.title.rendered;
                     currentblog.post_image = blog.featured_image_src;
                     currentblog.content = blog.content.rendered;
-                    // currentblog.seo = Object.keys(blog.yoast_head_json).map((key) => [Number(key), blog.yoast_head_json[key]]);
-                    // const temp = Object.entries(blog.yoast_head_json);
-                    // currentblog.seo = Object.entries(temp);
                     currentblog.seo = blog.yoast_head;
                     this.setState({ currentblog });
                 }else{
@@ -62,6 +55,7 @@ class BlogDetails extends React.Component {
         );
 
         this.setState({ otherblog });
+        console.log(otherblog);
     }
 
     onFormSubmit = (e) => {
@@ -69,9 +63,18 @@ class BlogDetails extends React.Component {
     }
 
     render(){
+        const $style = document.createElement("style");
+        document.head.appendChild($style);
+        $style.innerHTML = '.article-content a { display:inline; } .article-content > h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.2; margin: 0 0 10px; overflow-wrap: break-word; } .article-content h2 { font-size: 30px;} .article-content p{ font-size: 18px; font-weight: 300; } .article-content ol li{ font-size: 16px; margin-bottom: 20px; } .article-content h3 strong{ font-weight:bold; } .blog-details .inner .article-content h3{ margin-top:25px; }';
+
         const BlogDetails = this.state.currentblog;
         const otherBlogDetails = this.state.otherblog;
         const seoTag = this.state.currentblog.seo;
+
+        otherBlogDetails.map(otherBlog =>
+            otherBlog.links = '/'+otherBlog.title.rendered.replace(/\s+/g, '-') // collapse whitespace and replace by -
+            .replace(/-+/g, '-').toLowerCase() +'/'+ otherBlog.id
+        )
 
         return (
             <>
@@ -114,7 +117,7 @@ class BlogDetails extends React.Component {
                                             <li><Link to="#">Development</Link></li>
                                         </ul> */}
 
-                                        <h3>{BlogDetails.title}</h3>
+                                        <h1 style={{ fontWeight: 'bold', fontSize: 'xx-large', textTransform: 'uppercase' }}>{BlogDetails.title}</h1>
 
                                         <div dangerouslySetInnerHTML={{__html: BlogDetails.content}} />
 
@@ -124,16 +127,17 @@ class BlogDetails extends React.Component {
                                                     <img src={teamTwo} alt="Anil Gorraladaku" style={{ height: '90px', width: '90px' , borderRadius: '50%',    objectFit: 'cover', objectPosition: 'top'}} />
                                                 </div>
                                                 <div className="col-md-9">
-                                                    <h4 style={{ marginBottom:'0' }}>Anil Gorraladaku | <a target="_blank" href="https://www.linkedin.com/in/anilgorraladaku/"  uk-icon="icon: linkedin"></a></h4>
+                                                    <h4 style={{ marginBottom:'0' }}>Anil Gorraladaku | <a target="_blank" href="https://www.linkedin.com/in/anilgorraladaku/"><i uk-icon="icon: linkedin"></i></a></h4>
                                                     <p style={{ marginTop:'0' }}>He is a Digital Growth Hacker with mastery in growing various businesses using online media platforms.</p>
                                                 </div>
                                             </div>
+                                            <br />
                                             <div>
                                                 <div className="col-md-3" style={{ width: '15%', float: 'left' }}>
                                                     <img src={teamThree} alt="Chethan Shenoy" style={{ height: '90px', width: '90px' , borderRadius: '50%',    objectFit: 'cover', objectPosition: 'top'}} />
                                                 </div>
                                                 <div className="col-md-9">
-                                                    <h4 style={{ marginBottom:'0' }}>Chethan Shenoy | <a target="_blank" href="https://www.linkedin.com/in/chethanshenoy/"  uk-icon="icon: linkedin"></a></h4>
+                                                    <h4 style={{ marginBottom:'0' }}>Chethan Shenoy | <a target="_blank" href="https://www.linkedin.com/in/chethanshenoy/"><i uk-icon="icon: linkedin"></i> </a></h4>
                                                     <p style={{ marginTop:'0' }}>He is a Brand enthusiast with excellence in Brand Communication execution & delivery.</p>
                                                 </div>
                                             </div>
@@ -323,13 +327,14 @@ class BlogDetails extends React.Component {
                                         <ul>
                                             {
                                                 otherBlogDetails.map(otherBlog =>
+
                                                     <li key={otherBlog.id}>
-                                                        <Link to="#">
-                                                            <img src={otherBlog.post_image} alt="blog" />
+                                                        <Link to={otherBlog.links}>
+                                                            <img src={otherBlog.featured_image_src_square} alt="blog" />
                                                         </Link>
         
-                                                        {/* <h5><Link>{otherBlog.title}</Link></h5> */}
-                                                        <p className="date">21 March, 2019</p>
+                                                        <h5><Link>{otherBlog.title.rendered}</Link></h5>
+                                                        <small className="date">{otherBlog.date}</small>
                                                     </li>
                                                 )
                                             }

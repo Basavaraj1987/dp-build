@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel3';
+import StatsSlider from './StatsSlider';
 
 const options = {
     loop: true,
@@ -52,38 +53,16 @@ class LatestNews extends React.Component {
                 <section id="blog" className="blog-area uk-dark uk-blog uk-section">
                     <div className="uk-container">
                         <div className="uk-section-title section-title">
-                            <span>Our Company Blog</span>
-                            <h2>Latest News</h2>
+                            {/* <span>Our Company Blog</span> */}
+                            <h2>Why Digipuush?</h2>
                             <div className="bar"></div>
 
-                            <Link to="/blog" className="uk-button uk-button-default">View All</Link>
+                            {/* <Link to="/blog" className="uk-button uk-button-default">View All</Link> */}
                         </div>
 
-                        <OwlCarousel
-                            className="blog-slides owl-carousel owl-theme"
-                            {...options}
-                        >
+                        {/* Partner Area */}
+                        <StatsSlider />
 
-                            {
-                                this.state.blogs.map(blog =>
-                                    <div key={blog.id} className="single-blog-post">
-                                        <div className="blog-post-image">
-                                            <Link to={blog.links}>
-                                                <img src={blog.post_image} className="blogImg" alt="news" />
-                                            </Link>
-                                        </div>
-
-                                        <div className="blog-post-content">
-                                            <span className="date">{blog.created_at}</span>
-                                            <h3><Link to={blog.links}>{blog.title}</Link></h3>
-                                            <Link to={blog.links} className="read-more">Read More</Link>
-                                        </div>
-                                    </div>
-
-                                )
-                            }
-
-                        </OwlCarousel>
                     </div>
                 </section>
             </>

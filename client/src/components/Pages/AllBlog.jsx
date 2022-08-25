@@ -1,7 +1,6 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { Link } from "react-router-dom";
-import BlogDetails from './BlogDetails';
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 class AllBlog extends React.Component {
@@ -10,10 +9,6 @@ class AllBlog extends React.Component {
     };
 
     componentDidMount(){
-
-        const $style = document.createElement("style");
-        document.head.appendChild($style);
-        $style.innerHTML = `.blogImg { width: 380px; height: 214px; object-fit: cover; object-position: 100% 0%; }`;
 
         // var config = {
         //     headers: {'Access-Control-Allow-Origin': '*'}
@@ -35,6 +30,10 @@ class AllBlog extends React.Component {
     }
 
     render() {
+
+        const $style = document.createElement("style");
+        document.head.appendChild($style);
+        $style.innerHTML = `.blogImg { width: 380px; height: 214px; object-fit: cover; object-position: 100% 0%; }`;
 
         this.state.blogs.map(blog =>
             blog.links = blog.title.replace(/\s+/g, '-') // collapse whitespace and replace by -

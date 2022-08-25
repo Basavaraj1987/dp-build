@@ -22,6 +22,7 @@ import Blog from './components/Pages/Blog';
 import TermsConditions from './components/Pages/TermsConditions';
 import PrivacyPolicy from './components/Pages/PrivacyPolicy';
 import Contact from './components/Pages/Contact';
+import Landing from './components/Pages/Landing';
 
 class App extends React.Component {
     state = {
@@ -41,17 +42,19 @@ class App extends React.Component {
                     <Route path="/" exact component={Home} />
                     <Route path="/about" exact component={About} /> 
                     <Switch>
-                        <Route path="/service-details/:title/:id" exact component={ServiceDetails} />
+                        <Route path="/service-details/:title" exact component={ServiceDetails} />
                     </Switch>
                     <Route path="/projects" exact component={Project} />
                     <Route path="/project-details" exact component={ProjectDetails} />
-                    <Route path="/:title/:id" exact component={BlogDetails} />
+                    <Route path="/blog-details/:title/:id" exact component={BlogDetails} />
                     <Route path="/testimonials" exact component={Testimonials} />
                     <Route path="/team" exact component={Team} />
                     <Route path="/blog" exact component={Blog} />
                     <Route path="/terms-conditions" exact component={TermsConditions} />
                     <Route path="/privacy-policy" exact component={PrivacyPolicy} />
                     <Route path="/contact" exact component={Contact} />
+
+                    <Route path="/digital-marketing-landing" exact component={Landing} />
                 </>
             </Router>
         );

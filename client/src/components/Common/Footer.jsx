@@ -25,7 +25,13 @@ class Footer extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <p>We are a Digital Marketing Company with a Creative Bend. We believe in partnering with Brands as an extended arm of the marketing team by delivering creative solutions with measurable outcomes.</p>
+                                    <p>We push the limits to achieve your marketing & communication goals. </p>
+                                    <p>Our mantras:</p>
+                                    <ul>
+                                        <li>Brand-First Approach</li>
+                                        <li>Right Balance of Creative & Data </li>
+                                        <li>Trust-Based Partnership</li>
+                                    </ul>
                                 </div>
                             </div>
 

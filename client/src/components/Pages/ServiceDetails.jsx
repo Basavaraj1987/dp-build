@@ -30,13 +30,14 @@ class ServiceDetails extends React.Component {
 
         this.setState({ services });
 
-        const id = window.location.href.split("/").pop();
+        const slug = window.location.href.split("/").pop();
         const currentservice = [];
 
         services.map(singleservice => {
-                if(id == singleservice.id){
+                if(slug == singleservice.slug){
                     currentservice.name = singleservice.name;
-                    currentservice.content = singleservice.content;
+                    currentservice.content1 = singleservice.content1;
+                    currentservice.content2 = singleservice.content2;
                     currentservice.image = singleservice.image;
                     this.setState({ currentservice });
                 }
@@ -47,14 +48,10 @@ class ServiceDetails extends React.Component {
 
     render(){
         const currentservice = this.state.currentservice;
-        this.state.currentservice.map(service =>
-            service.links = '/service-details/'+service.name.replace(/\s+/g, '-') // collapse whitespace and replace by -
-        .replace(/-+/g, '-').toLowerCase() +'/'+ service.id // collapse dashes
-        )
 
         this.state.services.map(otherservice =>
             otherservice.links = '/service-details/'+otherservice.name.replace(/\s+/g, '-') // collapse whitespace and replace by -
-        .replace(/-+/g, '-').toLowerCase() +'/'+ otherservice.id // collapse dashes
+        .replace(/-+/g, '-').toLowerCase() // collapse dashes
         )
 
         return (
@@ -80,7 +77,7 @@ class ServiceDetails extends React.Component {
                                 <div className="inner uk-width-expand">
                                     <div className="services-details-desc">
                                         <h3>{currentservice.name}</h3>
-                                        <div dangerouslySetInnerHTML={{ __html: currentservice.content }}></div>
+                                        <div dangerouslySetInnerHTML={{ __html: currentservice.content1 }}></div>
 
                                         <OwlCarousel
                                             className="services-image-slides owl-carousel owl-theme"
@@ -90,15 +87,9 @@ class ServiceDetails extends React.Component {
                                                 <img src={blogImage} alt="img" />
                                             </div>
 
-                                            <div className="item">
-                                                <img src={blogImage} alt="img" />
-                                            </div>
-
-                                            <div className="item">
-                                                <img src={blogImage} alt="img" />
-                                            </div>
                                         </OwlCarousel>
 
+                                        <div dangerouslySetInnerHTML={{ __html: currentservice.content2 }}></div>
                                     </div>
                                 </div>
 

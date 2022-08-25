@@ -789,7 +789,7 @@ Features CSS
 }
 
 .features-area.uk-dark {
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 
 .single-features-box {
